@@ -290,3 +290,12 @@ footer button {
 header {
   text-align: center;
 }
+
+header h1 {
+  font-size: 5rem;
+}
+
+header p {
+  max-width: 800px;
+  margin: 0 auto;
+}
