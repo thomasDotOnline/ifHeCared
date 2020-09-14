@@ -8,25 +8,27 @@
     <title>If Jeff Bezos Cared</title>
 </head>
 
-<body>
+<body class="wrapper">
     <header>
 
         <h1>If Jezz Bezos cared?</h1>
 
-        <p>discription/instructions</p>
+        <p>have you ever struggled </p>
 
     </header>
 
     <main>
         <!-- question 1 start -->
         <section class="question">
-
-            <h2>What is important to you? </h2>
-            <label for="question1">The enviorment is most important to me!</label>
-            <input type="radio" name="question1" value="enivorment">
-            <input type="radio" name="question1" value="humanitarian">
-            <button class="cta1">change the world!</button>
-
+            <div class="firstQuestion">
+                <h2>What is important to you? </h2>
+                <label for="question1">Which is more important to you?</label>
+                <p>the natural enviorment!</p>
+                <input autocomplete="off" type="radio" name="question1" value="enivorment">
+                <p>humanitarian causes!</p>
+                <input autocomplete="off" type="radio" name="question1" value="humanitarian">
+                <button class="cta1">change the world!</button>
+            </div>
         </section>
         <!-- question 1 end -->
 
@@ -36,16 +38,20 @@
             <div class="enviormental hidden">
                 <h2>Enviormental causes are most important to me!</h2>
                 <label for="question2"> how would you beifit this cause ?</label>
-                <input type="radio" name="question2" value="land">
-                <input type="radio" name="question2" value="water">
+                <p>Doing what you can to help terra firma?</p>
+                <input autocomplete="off" type="radio" name="question2" value="land">
+                <p>Doing what you can to help the ocean or water ways?</p>
+                <input autocomplete="off" type="radio" name="question2" value="water">
                 <button class="cta2">change the world!</button>
             </div>
 
             <div class="humanity hidden">
-                <h2>Humanitarian causes are most important to me!</h2>
-                <label for="question2"> how would you beifit this cause ?</label>
-                <input type="radio" name="question2" value="societal">
-                <input type="radio" name="question2" value="indivigual">
+                <h2>Humanitarian causes are most important to you!</h2>
+                <label for="question2">what scale would you focus?</label>
+                <p>provide global support</p>
+                <input autocomplete="off" type="radio" name="question2" value="global">
+                <p>support localy</p>
+                <input autocomplete="off" type="radio" name="question2" value="indivigual">
                 <button class="cta2">change the world!</button>
             </div>
 
@@ -57,56 +63,57 @@
             <div class="land hidden">
                 <h2>land causes are most important to me!</h2>
                 <label for="question3"> how would you beifit this cause ?</label>
-                <input type="radio" name="question3" value="ProtectingForests">
-                <input type="radio" name="question3" value="greenEnergy">
+                <p>protecting Forests</p>
+                <input autocomplete="off" type="radio" name="question3" value="ProtectingForests">
+                <p>Growing Green Energy</p>
+                <input autocomplete="off" type="radio" name="question3" value="greenEnergy">
                 <button class="cta3">change the world!</button>
             </div>
 
             <div class="water hidden">
                 <h2>water causes are most important to me!</h2>
                 <label for="question3"> how would you beifit this cause ?</label>
-                <input type="radio" name="question3" value="savingReef">
-                <input type="radio" name="question3" value="trashIsland">
+                <p>saving the great barrior reef</p>
+                <input autocomplete="off" type="radio" name="question3" value="savingReef">
+                <p>clearing out trash Island</p>
+                <input autocomplete="off" type="radio" name="question3" value="trashIsland">
                 <button class="cta3">change the world!</button>
             </div>
 
-            <div class="societal hidden">
+            <div class="global hidden">
                 <h2>societal causes are most important to me!</h2>
                 <label for="question3"> how would you beifit this cause ?</label>
-                <input type="radio" name="question3" value="sotialPrograms">
-                <input type="radio" name="question3" value="globalHunger">
+                <p>doctors without borders</p>
+                <input autocomplete="off" type="radio" name="question3" value="existingPrograms">
+                <p>refugee support</p>
+                <input autocomplete="off" type="radio" name="question3" value="globalsupport">
                 <button class="cta3">change the world!</button>
             </div>
 
             <div class="indivigual hidden">
                 <h2>personal rights causes are most important to me!</h2>
                 <label for="question3"> how would you beifit this cause ?</label>
-                <input type="radio" name="question3" value="homelessness">
-                <input type="radio" name="question3" value="fairWages">
+                <p>helping people get off the street</p>
+                <input autocomplete="off" type="radio" name="question3" value="homelessness">
+                <p>support for your workers</p>
+                <input autocomplete="off" type="radio" name="question3" value="fairWages">
                 <button class="cta3">change the world!</button>
             </div>
 
         </section>
         <!-- question 3 end -->
 
+        <!-- results presntation start -->
+        <div class="results clear">
 
-        <section class="results">
-
-        </section>
-
-
-
-
-
-
+        </div>
+        <!-- results presntation end -->
     </main>
-
     <footer>
-
+        <button class="cta4">reset</button>
     </footer>
 </body>
 <script src='https://code.jquery.com/jquery-3.4.0.min.js'
     integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
 <script src="./app.js"></script>
-
 </html>
