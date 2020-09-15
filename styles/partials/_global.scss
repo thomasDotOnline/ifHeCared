@@ -20,6 +20,7 @@ p {
     margin: 10px 0;
     font-size: 2rem;
     font-family: 'Assistant', sans-serif;
+    padding: 8px 0;
 }
 
 label,
@@ -78,8 +79,12 @@ button {
     margin: 0 auto;
 }
 
+
+// reset button styles start
 footer {
+    padding: 20px 0;
     button {
         margin: 0 auto;
     }
 }
+// reset button styles end 
