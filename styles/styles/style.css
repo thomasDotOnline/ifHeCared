@@ -241,15 +241,44 @@ html {
 body {
   background-color: #FBFFF1;
   color: #342838;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: 'Cinzel', serif;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 p {
   margin: 10px 0;
   font-size: 2rem;
+  font-family: 'Assistant', sans-serif;
+}
+
+label,
+input {
+  font-family: 'Assistant', sans-serif;
+  padding-top: 10px;
+}
+
+a {
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #E7C411;
+  font-size: 2.1rem;
 }
 
 .hidden {
   display: none;
+  color: #342838;
 }
 
 div {
@@ -270,6 +299,7 @@ button {
   background-color: #E7C411;
   border-radius: 6px;
   font-size: 1.7rem;
+  text-transform: capitalize;
 }
 
 button:hover, button:focus {
@@ -298,4 +328,10 @@ header h1 {
 header p {
   max-width: 800px;
   margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 4rem;
+  }
 }
