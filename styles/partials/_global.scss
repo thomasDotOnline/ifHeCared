@@ -1,14 +1,13 @@
-
-// font and text styles 
+// font and text styles
 body {
-    background-color: #FBFFF1;
+    background-color: #fbfff1;
     color: #342838;
     text-align: center;
 }
 
 h1,
 h2 {
-    font-family: 'Cinzel', serif;
+    font-family: "Cinzel", serif;
 }
 
 h2 {
@@ -16,40 +15,44 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-weight: normal;
+    font-family: "Assistant", sans-serif;
+    font-size: 2.3rem;
+}
 
 p {
     margin: 10px 0;
     font-size: 2rem;
-    font-family: 'Assistant', sans-serif;
+    font-family: "Assistant", sans-serif;
     padding: 8px 0;
 }
 
 label,
 input {
-    font-family: 'Assistant', sans-serif;
+    font-family: "Assistant", sans-serif;
     padding-top: 10px;
 }
 
-// link styles 
+// link styles
 a {
     text-transform: capitalize;
     text-decoration: none;
 
     &:hover,
     &:focus {
-        color: #E7C411;
+        color: #e7c411;
         font-size: 2.1rem;
     }
 }
 
-// hidden class to hid question html when appropriate 
+// hidden class to hid question html when appropriate
 .hidden {
     display: none;
     color: #342838;
-
 }
 
-// global div styles 
+// global div styles
 div {
     margin-top: 50px;
     display: flex;
@@ -66,31 +69,32 @@ button {
     display: block;
     padding: 10px 15px;
     margin-top: 25px;
-    background-color: #E7C411;
+    background-color: #e7c411;
     border-radius: 6px;
     font-size: 1.7rem;
     text-transform: capitalize;
 
     &:hover,
     &:focus {
-        background-color: #A77B14;
+        background-color: #a77b14;
         box-shadow: -5px 5px 2px 0px rgba(0, 0, 0, 0.75);
     }
 }
 
-// final results styles 
+// final results styles
 .results {
     padding-top: 100px;
     max-width: 500px;
     margin: 0 auto;
 }
 
-
 // reset button styles start
 footer {
     padding: 20px 0;
+
     button {
         margin: 0 auto;
     }
 }
-// reset button styles end 
+
+// reset button styles end

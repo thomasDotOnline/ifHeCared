@@ -21,13 +21,10 @@ ifHeCared.answer1 = function (question1Answer) {
         // if else statment to display correct next question and hide all other possible displays
         if (question1Answer === 'enivorment') {
             $('.enviormental').toggleClass('hidden')
-            $('.humanity').addClass('hidden')
-            $('.firstQuestion').addClass('hidden')
-
+            $('.humanity, .firstQuestion').addClass('hidden')
         } else if (question1Answer === 'humanitarian') {
             $('.humanity').toggleClass('hidden')
-            $('.enviormental').addClass('hidden')
-            $('.firstQuestion').addClass('hidden')
+            $('.enviormental, .firstQuestion').addClass('hidden')
 
         } else {
             alert('Please select an option... Or you can leave, and thanks for stopping by :) .')
@@ -45,33 +42,20 @@ ifHeCared.answer2 = function (question2Answer) {
 
         // if else statment to display correct next question and hide all other possible displays
         if (question2Answer === 'land') {
-            $('.enviormental').addClass('hidden')
+            $('.enviormental, .water, global, indivigual').addClass('hidden')
             $('.land').toggleClass('hidden')
-            $('.water').addClass('hidden')
-            $('.global').addClass('hidden')
-            $('.indivigual').addClass('hidden')
 
         } else if (question2Answer === 'water') {
-            $('.enviormental').addClass('hidden')
+            $('.enviormental, .land, .global, indivigual').addClass('hidden')
             $('.water').toggleClass('hidden')
-            $('.land').addClass('hidden')
-            $('.global').addClass('hidden')
-            $('.indivigual').addClass('hidden')
 
         } else if (question2Answer === 'global') {
-            $('.humanity').addClass('hidden')
+            $('.humanity, .land, .water, .indivigual').addClass('hidden')
             $('.global').toggleClass('hidden')
-            $('.water').addClass('hidden')
-            $('.land').addClass('hidden')
-            $('.indivigual').addClass('hidden')
 
         } else if (question2Answer === 'indivigual') {
-            $('.humanity').addClass('hidden')
+            $('.humanity, .water, .land, .global').addClass('hidden')
             $('.indivigual').toggleClass('hidden')
-            $('.water').addClass('hidden')
-            $('.land').addClass('hidden')
-            $('.global').addClass('hidden')
-
         } else {
             alert('Please select an option... Or you can leave, and thanks for stopping by :) .')
         }
