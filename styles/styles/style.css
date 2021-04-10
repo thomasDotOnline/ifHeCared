@@ -267,25 +267,51 @@ p {
   padding: 8px 0;
 }
 
-label,
-input {
+label {
   font-family: "Assistant", sans-serif;
-  padding-top: 10px;
+  text-transform: capitalize;
+  font-size: 2.6rem;
+  padding: 20px 10px;
+  margin: 20px 0;
+  border-radius: 21px;
+  border: 2px solid #d3c5a6;
+  background: linear-gradient(145deg, #ffe246, #d9be3b);
+}
+
+label:hover {
+  box-shadow: 6px 6px 2px 0.7px;
+}
+
+input {
+  opacity: 0;
+}
+
+input:focus + label {
+  box-shadow: 6px 6px 2px 0.7px;
+}
+
+input[type="radio"]:checked + label {
+  border-radius: 21px;
+  background: linear-gradient(145deg, #8f7809, #aa900e);
+  box-shadow: 4px 4px 0.9px;
 }
 
 a {
   text-transform: capitalize;
   text-decoration: none;
+  font-weight: 700;
+}
+
+a:visited {
+  color: inherit;
 }
 
 a:hover, a:focus {
   color: #e7c411;
-  font-size: 2.1rem;
 }
 
 .hidden {
   display: none;
-  color: #342838;
 }
 
 div {
@@ -295,23 +321,19 @@ div {
   flex-direction: column;
 }
 
-label {
-  font-size: 2.6rem;
-}
-
 button {
   display: block;
   padding: 10px 15px;
   margin-top: 25px;
-  background-color: #e7c411;
-  border-radius: 6px;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   text-transform: capitalize;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #f7d212, #d0b00f);
 }
 
 button:hover, button:focus {
-  background-color: #a77b14;
-  box-shadow: -5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+  background: linear-gradient(145deg, #d0b00f, #f7d212);
+  box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
 .results {
@@ -320,12 +342,12 @@ button:hover, button:focus {
   margin: 0 auto;
 }
 
-footer {
-  padding: 20px 0;
+.cta4 {
+  margin: 0 auto;
 }
 
-footer button {
-  margin: 0 auto;
+footer {
+  padding: 20px 0;
 }
 
 header {
